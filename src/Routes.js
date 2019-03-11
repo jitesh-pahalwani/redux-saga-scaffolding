@@ -1,0 +1,20 @@
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './home';
+import Details from './details';
+
+
+class Routes extends Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <Route exact path='/' component={Home}/>
+          <Route path='/details' component={Details}/>
+        </div>
+      </Router>
+    );
+  }
+}
+
+export default Routes;
